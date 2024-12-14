@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Fotos Accesible</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    #imagen {
+      width: 400px;
+      height: 300px;
+      border: 2px solid black;
+      background-color: #f4f4f4;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      line-height: 300px;
+      font-size: 18px;
+      color: #333;
+      margin: 20px auto;
+    }
+    .miniatura {
+      width: 120px;
+      height: 100px;
+      margin: 5px;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .miniatura:focus {
+      outline: 2px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galería de Fotos Interactiva</h1>
+  <p>Utilice el ratón o el teclado para interactuar con las imágenes.</p>
+
+  <div id="imagen">Pase el ratón o enfoque una imagen para mostrarla aquí</div>
+
+  <div>
+    <figure>
+      <img class="miniatura" src="https://via.placeholder.com/400/ff0000" alt="Flor roja en un campo soleado">
+    </figure>
+    <figure>
+      <img class="miniatura" src="https://via.placeholder.com/400/00ff00" alt="Bosque verde en la mañana">
+    </figure>
+    <figure>
+      <img class="miniatura" src="https://via.placeholder.com/400/0000ff" alt="Lago azul con montañas">
+    </figure>
+    <figure>
+      <img class="miniatura" src="https://via.placeholder.com/400/ffff00" alt="Playa amarilla al atardecer">
+    </figure>
+    <figure>
+      <img class="miniatura" src="https://via.placeholder.com/400/ff00ff" alt="Campo de flores púrpuras">
+    </figure>
+    <figure>
+      <img class="miniatura" src="https://via.placeholder.com/400/00ffff" alt="Océano turquesa brillante">
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
